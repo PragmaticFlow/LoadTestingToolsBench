@@ -427,3 +427,12 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Load testing results and reports
+reports/
+
+# JetBrains IDE
+.idea/
+
+# Maven build output (Gatling)
+target/
