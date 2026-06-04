@@ -4,6 +4,13 @@ using System.Text.Json;
 using NBomber.CSharp;
 using NBomber.Http.CSharp;
 
+// run the WebSocket echo benchmark with:  dotnet run -- ws
+if (args.Contains("ws"))
+{
+    new WebSocketBenchmark().Run();
+    return;
+}
+
 const string BASE_URL = "http://localhost:5000";
 const int USERS_PER_REQUEST = 20;
 const int VUs = 300;
